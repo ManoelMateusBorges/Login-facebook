@@ -1,0 +1,173 @@
+@font-face {
+	font-family:'Lato';
+	src: url(font/Lato-Regular.ttf);
+}
+
+*{
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+/* ------------ header ------------ */
+
+header{
+	width: 100%;
+	background-color: #3b5998;
+}
+
+header > div.container-login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1100px;
+	margin: auto;
+	padding:10px 1%;
+}
+
+div.container-login > span{
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+div.form-login{
+	background-color: green;
+	
+}
+
+form > div.input-login{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+form > div.input-login > label{
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+
+form input[type=email], input[type=password]{
+	display:block;
+	padding: 3px;
+}
+
+form > div input[type=submit]{
+	padding: 5px;
+	background-color: #3a6cd6;
+	color: #ffffff;
+	border: none;
+}
+
+form > div input[type=submit]:hover{
+	background-color: #1f4ba6;
+	outline: none;
+	
+}
+
+/* ------------ Main ------------ */
+
+main#main{
+	height: 70vh;
+	padding: 20px;
+	background: linear-gradient(white, #D3D8E8);
+	padding: 30px;
+}
+
+main#main > div.container-main{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin: auto;
+	max-width: 1100px;
+}
+
+section#descricao{
+	width: 60%;
+	margin-bottom: 100px;
+	padding: 10px;
+}
+
+section#descricao > h2{
+	width: 440px;
+	font-size: 20px;
+	text-align: left;
+}
+section#descricao img{
+	width:100%;
+	
+}
+
+section#cadastro{
+	border: solid 2px black;
+	height: 100%;
+	width: 450px;
+	
+}
+
+section#cadastro > h1{
+	font-size: 30px;
+	margin-bottom: 4px;
+}
+section#cadastro > p{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+div.input-cadastro > input{
+	padding: 8px;
+	border: 1px solid #ccc;
+	outline: none;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+form > div.pessoal{
+	width: 100%;
+	display: flex;justify-content: space-between;
+	margin-bottom:8px;
+}
+form > div.pessoal  input[type=text]{
+	width: 49%;
+}
+
+div.email {
+	margin-bottom: 8px;
+}
+
+div.email > input[type=password],div.email > input[type=email]{
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+div.data > h3{
+	font-size: 20px;
+	color: rgb(170, 148, 148);
+	margin-bottom: 5px;
+}
+
+div.data > select{
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+div.data > select.nascimento-mes{
+	padding: 3px 5px;
+}
+
+div.genero > h3{
+	font-size: 20px;
+	color: rgb(170, 148, 148);
+	margin-bottom: 5px;
+}
+div.genero > label {
+	margin-right: 10px;
+	font-size: 20px;
+}
+div.genero > label > input[type=radio]{
+	margin-right: 5px;
+}
