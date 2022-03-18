@@ -22,7 +22,7 @@ header > div.container-login{
 	justify-content: center;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 1100px;
+	max-width: 1024px;
 	margin: auto;
 	padding:10px 1%;
 }
@@ -33,11 +33,6 @@ div.container-login > span{
 	color: #ffffff;
 }
 
-div.form-login{
-	background-color: green;
-	
-}
-
 form > div.input-login{
 	display: inline-block;
 	margin-right: 20px;
@@ -45,7 +40,6 @@ form > div.input-login{
 
 form > div.input-login > label{
 	color: #ffffff;
-	display: inline-block;
 	margin-bottom: 4px;
 }
 
@@ -71,18 +65,16 @@ form > div input[type=submit]:hover{
 /* ------------ Main ------------ */
 
 main#main{
-	height: 70vh;
 	padding: 20px;
 	background: linear-gradient(white, #D3D8E8);
-	padding: 30px;
+	
 }
 
 main#main > div.container-main{
 	display: flex;
 	align-items: center;
-	height: 100%;
 	margin: auto;
-	max-width: 1100px;
+	max-width: 1024px;
 }
 
 section#descricao{
@@ -92,7 +84,7 @@ section#descricao{
 }
 
 section#descricao > h2{
-	width: 440px;
+	width: 65%;
 	font-size: 20px;
 	text-align: left;
 }
@@ -102,7 +94,6 @@ section#descricao img{
 }
 
 section#cadastro{
-	height: 100%;
 	width: 450px;
 	
 }
@@ -184,24 +175,68 @@ section#cadastro form > button[type=submit]{
 }
 
 footer > div.footer{
-	max-width: 1100px;
+	width: 70%;
 	margin: auto;
 }
 
 nav  ul > li {
-	margin-right: 20px;
+	margin:0px 0px 15px 20px;
 }
 nav ul li a.selected  {
 	color: #ccc;
 	cursor: default;
 }
 
-nav > ul {
+div.footer nav > ul{
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 10px;
 } 
 
-footer > div.dois{
+ footer > div.dois{
 	border-top: 1px solid #ccc;
+}
+
+/* ========= Responsividade ========== */
+
+@media screen and (max-width : 760px){
+	
+	header > div.container-login{
+		display: block;
+		text-align: center;
+	}
+	
+	form > div.input-login{
+		display: block;
+		text-align: center;
+		margin: 15px 0px;
+		
+	}
+
+	div.input-login > label{
+		font-size: 20px;
+	}
+
+	form input[type=email], input[type=password]{
+		display: block;
+		width: 80%;
+		padding: 10px;
+		border-radius: 5px;
+		outline: none;
+		margin: auto;
+	}
+
+	form > div input[type=submit]{
+	padding: 15px 60px;
+	font-size: 18px;
+	border-radius: 5px;
+	}
+
+	section#descricao{
+		display: none;
+	}
+	
+
+
 }
